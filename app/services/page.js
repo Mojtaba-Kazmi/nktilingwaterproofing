@@ -17,7 +17,7 @@ async function getPaginatedServices(page = 1) {
     //   }
     // );
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/services/`,
+      `${process.env.NEXT_API_URL}/api/services/`,
       {
         cache: "no-store", // Revalidate every 30 days (2592000 seconds)
       }
