@@ -1,0 +1,102 @@
+/* Logo styling */
+.section .logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  margin: 0 auto;
+}
+
+.contactInfo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.contactDetails p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contactNumber {
+  padding: 1rem 1.5rem;
+  background-color: #036293;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff !important;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.contactNumber a {
+  color: #fff !important;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.legal a {
+  color: #000; /* Match header link color */
+  text-decoration: none;
+}
+
+.legal a:hover {
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Ensure icons are aligned vertically */
+  gap: 1rem; /* Adjust spacing between icons */
+  margin-top: 1rem;
+}
+
+.socials a {
+  color: #000336;
+  font-size: 1.5rem;
+}
+
+.socials a:hover {
+  color: #295d8c; /* Darker shade for hover effect */
+}
+
+/* Find Us link */
+.findUs {
+  margin-top: 1rem;
+  align-self: flex-start; /* Align to the start of the container */
+}
+
+.findUs a {
+  color: #000; /* Match header link color */
+  text-align: left; /* Align text to the left */
+  text-decoration: none;
+}
+
+.findUs a:hover {
+  text-decoration: none;
+}
+
+/* Large screen desktops (1025px and up) */
+@media (min-width: 1025px) {
+  .logo img {
+    margin: 0;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: left; /* Center horizontally */
+    align-items:flex-start; /* Ensure icons are aligned vertically */
+    gap: 1rem; /* Adjust spacing between icons */
+    margin-top: 1rem;
+  }
+  
+  .socials a {
+    color: #000336;
+    font-size: 1.5rem;
+  }
+}
+
+.legal {
+  cursor: pointer;
+}

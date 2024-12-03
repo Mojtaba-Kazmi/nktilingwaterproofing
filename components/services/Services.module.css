@@ -1,0 +1,147 @@
+/* Services Container */
+.servicesContainer {
+  position: relative; /* Ensure video and gradient stay within the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; /* Ensures video and gradient don’t overflow */
+  background-color: #f5f4f6;
+  z-index: 0;
+  margin: 0.2rem; /* Apply margin to the wrapper */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Styling for the section heading */
+.servicesContainer h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #081333; /* Dark text for heading */
+  margin-bottom: 40px;
+}
+
+/* Wrapper */
+.wrapper {
+  position: relative; /* Ensures video and gradient are positioned inside */
+  padding: 2rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Fallback background */
+  border-radius: 8px; /* Rounded corners for the wrapper */
+  z-index: 1; /* Keep content above the video and gradient */
+  overflow: hidden; /* Ensure video and gradient respect the border-radius */
+}
+
+.heading {
+  display: flex;
+  justify-content: center; /* Use justify-content for horizontal centering */
+  align-items: center; /* This centers the items vertically */
+  text-align: center; /* Ensures text within child elements is centered */
+}
+
+/* Services Icon */
+.servicesIcon {
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height to match width */
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden; /* Hides any overflow */
+  display: flex; /* Use flex to center the image */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin: 0 auto; /* Center the icon horizontally */
+  margin-top: -60px; /* Adjust margin to give space above */
+  
+}
+
+/* Adjust the Image component inside the servicesIcon */
+.icon {
+  width: 100%; /* Fill the parent container */
+  height: 100%; /* Ensure it fills height */
+}
+
+/* Grid layout for the services */
+.servicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; /* Center content */
+  gap: 40px 15px; /* Space between service cards */
+  margin-top: 90px; /* Adjust margin to give space above */
+}
+
+/* Individual service card */
+.serviceCard {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center items */
+  text-align: center; /* Center text */
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Add a blur effect to the background */
+  padding: 30px 0 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  width: 100%; /* Full width for smaller screens */
+  max-width: 380px; /* Set a max width for each card */
+}
+
+/* Service card hover effect */
+.serviceCard:hover {
+  transform: translateY(-10px); /* Lift on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Elevated shadow */
+}
+
+/* Service title */
+.serviceCard h2 {
+  font-size: 25px;
+  margin: 20px;
+  color: #081333;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Service metadata (published date, provider) */
+.serviceCard p {
+  margin: 0 20px;
+  font-size: 1.2rem;
+  color: #081333;
+  line-height: 1.6;
+}
+
+/* Read More link styling */
+.readMore {
+  color: #265e87 !important; /* Blue for the link */
+  font-weight: 600;
+  margin-top: 15px !important;
+  cursor: pointer;
+  font-size: 13px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.readMore:hover {
+  color: #081333 !important; /* Darker blue on hover */
+  text-decoration: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .servicesGrid {
+    flex-direction: column; /* Stack the cards vertically on small screens */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+  }
+
+  .serviceCard {
+    margin-bottom: 20px; /* Space between service cards */
+  }
+
+  /* You can adjust the icon size for mobile if needed */
+  .servicesIcon {
+    width: 100px; /* Smaller width for mobile */
+    height: 100px; /* Smaller height for mobile */
+  }
+}
+
+

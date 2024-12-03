@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nktilingwaterproofing.com.au/
+
+# Sitemaps
+Sitemap: https://nktilingwaterproofing.com.au//sitemap.xml

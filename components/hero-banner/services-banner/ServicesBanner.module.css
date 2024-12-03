@@ -1,0 +1,161 @@
+/* Main container for the Services section */
+.serviceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Wrapper to align service items in a row */
+.serviceItemsWrapper {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Content inside serviceItem */
+.serviceItem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1; /* Ensures it's above the pseudo-element */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+.serviceItem p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  color: #000;
+  z-index: 1; /* Ensures it's above the pseudo-element */
+}
+
+/* Styling for the button */
+.buttonContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btnGetQuote {
+  display: inline-block;
+  padding: 1rem 1rem;
+  background-color: #036293; /* Darker blue for higher contrast */
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btnGetQuote:focus, .btnGetQuote:active {
+  outline: 3px solid #ffffff; /* Or any color with good contrast */
+  background-color: #137bc4;
+}
+
+.btnGetQuote:hover {
+  background-color: #137bc4; /* Hover color with sufficient contrast */
+}
+
+/* Responsive Adjustments */
+
+/* Small tablets and large mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .serviceItemsWrapper {
+    gap: 1rem; /* Reduce gap between items */
+  }
+
+  .serviceItem img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .serviceItem p {
+    font-size: 1.1rem; /* Adjust font size to fit better */
+  }
+
+  .btnGetQuote {
+    font-size: 0.9em;
+    padding: 1rem 1rem;
+  }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .serviceContainer {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .serviceItem img {
+    width: 50%; /* Adjust image size within circle */
+    height: auto;
+    object-fit: cover; /* Prevents image from being cropped */
+  }
+
+  .serviceItem p {
+    font-size: 1rem; /* Further reduce text size */
+  }
+
+  .btnGetQuote {
+    font-size: 0.85em;
+    padding: 1rem 1rem;
+  }
+}
+
+/* Larger tablets and small desktops (768px and above) */
+@media (min-width: 769px) {
+  .serviceItem img{
+    width: 120px;
+    height: 120px;
+  }
+
+  .serviceItem p {
+    font-size: 1rem;
+  }
+
+  .btnGetQuote {
+    font-size: 1em;
+    padding: 1rem 1rem;
+  }
+}
+
+/* Desktops and large screens (1024px and above) */
+@media (min-width: 1024px) {
+  .serviceItem img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .serviceItem p {
+    font-size: 1.5rem;
+  }
+
+  .btnGetQuote {
+    font-size: 1.1em;
+    padding: 1rem 1rem;
+  }
+}
+
+/* Larger tablets and small desktops (768px and above) */
+@media (max-width: 600px) {
+  .serviceItem img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .serviceItem p {
+    font-size: 1.2rem;
+  }
+
+  .btnGetQuote {
+    font-size: 1em;
+    padding: 1rem 1rem;
+  }
+}
